@@ -165,5 +165,6 @@
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-lite-license:11.8.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable:26.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement:11.8.0@aar" level="project" />
+    <orderEntry type="module" module-name="javaJokerLib" />
   </component>
 </module>
