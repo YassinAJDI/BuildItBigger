@@ -1,3 +1,8 @@
+/**
+ * The first line in the build configuration applies the Android plugin for
+ * Gradle to this build and makes the android block available to specify
+ * Android-specific build options.
+ */
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.cloud.tools.endpoints-framework-client'
 
@@ -10,10 +15,20 @@ buildscript {
     }
 }
 
+/**
+ * The android block is where you configure all your Android-specific
+ * build options.
+ */
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.3"
 
+    /**
+     * The defaultConfig block encapsulates default settings and entries for all
+     * build variants, and can override some attributes in main/AndroidManifest.xml
+     * dynamically from the build system. You can configure product flavors to override
+     * these values for different versions of your app.
+     */
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
         minSdkVersion 16
@@ -25,6 +40,13 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
+    /**
+     * The buildTypes block is where you can configure multiple build types.
+     * By default, the build system defines two build types: debug and release. The
+     * debug build type is not explicitly shown in the default build configuration,
+     * but it includes debugging tools and is signed with the debug key. The release
+     * build type applies Proguard settings and is not signed by default.
+     */
     buildTypes {
         release {
             minifyEnabled false
@@ -33,6 +55,10 @@ android {
     }
 }
 
+/**
+ * The dependencies block in the module-level build configuration file
+ * specifies dependencies required to build only the module itself.
+ */
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     endpointsServer project(path: ':backend', configuration: 'endpoints')
