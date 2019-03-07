@@ -27,6 +27,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="javaJokerLib" exported="" />
     <orderEntry type="library" exported="" name="Gradle: endpoints-framework-2.0.9" level="project" />
     <orderEntry type="library" exported="" name="Gradle: javax.inject-1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-api-client-appengine-1.21.0" level="project" />
