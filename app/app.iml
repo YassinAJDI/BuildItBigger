@@ -166,5 +166,11 @@
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement:11.8.0@aar" level="project" />
     <orderEntry type="module" module-name="androidDisplayJokeLib" />
     <orderEntry type="module" module-name="javaJokerLib" />
+    <orderEntry type="module" module-name="androidDisplayJokeLib" />
+    <orderEntry type="module" module-name="javaJokerLib" />
+    <orderEntry type="module" module-name="androidDisplayJokeLib" />
+    <orderEntry type="module" module-name="javaJokerLib" />
+    <orderEntry type="module" module-name="androidDisplayJokeLib" />
+    <orderEntry type="module" module-name="javaJokerLib" />
   </component>
 </module>
