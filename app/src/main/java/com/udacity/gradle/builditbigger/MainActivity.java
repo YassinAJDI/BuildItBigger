@@ -1,28 +1,16 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.ajdi.yassin.androiddisplayjokelib.JokeDetailsActivity;
-import com.ajdi.yassin.javajokerlib.Joker;
-import com.google.api.client.extensions.android.http.AndroidHttp;
-import com.google.api.client.extensions.android.json.AndroidJsonFactory;
-import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
-import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
-import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
-
-import java.io.IOException;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements JokeListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +42,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-//        String joke = new Joker().tellAJoke();
         new EndpointsAsyncTask(this).execute();
+    }
+
+    @Override
+    public void onJokeLoaded(String joke) {
+        Intent intent = new Intent(this, JokeDetailsActivity.class);
+        intent.putExtra(JokeDetailsActivity.EXTRA_JOKE, joke);
+        startActivity(intent);
     }
 }
