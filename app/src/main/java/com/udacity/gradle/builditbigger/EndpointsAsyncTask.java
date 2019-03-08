@@ -3,9 +3,6 @@ package com.udacity.gradle.builditbigger;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.util.Pair;
-import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.ajdi.yassin.androiddisplayjokelib.JokeDetailsActivity;
 import com.google.api.client.extensions.android.http.AndroidHttp;
