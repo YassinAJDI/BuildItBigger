@@ -87,7 +87,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:26.1.0'
 
     // Ads
-    implementation 'com.google.android.gms:play-services-ads:11.8.0'
+    freeImplementation 'com.google.android.gms:play-services-ads:11.8.0'
 
     // Google cloud
     implementation 'com.google.api-client:google-api-client:1.23.0'
