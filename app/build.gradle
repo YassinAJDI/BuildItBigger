@@ -81,6 +81,7 @@ dependencies {
     implementation project(':javaJokerLib')
     implementation project(':androidDisplayJokeLib')
     // V2: Endpoints Framework v2 migration
+    implementation 'com.android.support:support-v4:26.1.0'
     endpointsServer project(path: ':backend', configuration: 'endpoints')
 
     // android support libs
