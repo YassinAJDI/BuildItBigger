@@ -55,6 +55,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    // Specifies one flavor dimension.
+    flavorDimensions "tier"
+    productFlavors {
+        free {
+            dimension "tier"
+            applicationIdSuffix ".free"
+        }
+
+        paid {
+            dimension "tier"
+            applicationIdSuffix ".paid"
+        }
+    }
+
 }
 
 /**
@@ -63,14 +78,18 @@ android {
  */
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    // V2: Endpoints Framework v2 migration
-    endpointsServer project(path: ':backend', configuration: 'endpoints')
     implementation project(':javaJokerLib')
     implementation project(':androidDisplayJokeLib')
+    // V2: Endpoints Framework v2 migration
+    endpointsServer project(path: ':backend', configuration: 'endpoints')
 
+    // android support libs
     implementation 'com.android.support:appcompat-v7:26.1.0'
+
+    // Ads
     implementation 'com.google.android.gms:play-services-ads:11.8.0'
+
+    // Google cloud
     implementation 'com.google.api-client:google-api-client:1.23.0'
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
     implementation 'com.google.code.findbugs:jsr305:3.0.1'
