@@ -52,3 +52,32 @@ allprojects {
         jcenter()
     }
 }
+
+task runLocalServer {
+    dependsOn ':backend:appengineStart'
+    doLast {
+        println "Server started..."
+    }
+}
+
+task runAndroidTests {
+    dependsOn ':app:connectedAndroidTest'
+    doLast {
+        println "Testing finished..."
+    }
+}
+
+task stopLocalServer {
+    dependsOn ':backend:appengineStop'
+    doLast {
+        println "Server stopped..."
+    }
+}
+
+task automateCustomTask {
+    dependsOn 'runLocalServer'
+    dependsOn 'runAndroidTests'
+    dependsOn 'stopLocalServer'
+    runLocalServer.finalizedBy runAndroidTests
+    runAndroidTests.finalizedBy stopLocalServer
+}
