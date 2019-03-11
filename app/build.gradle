@@ -79,7 +79,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     // V2: Endpoints Framework v2 migration
     endpointsServer project(path: ':backend', configuration: 'endpoints')
-    implementation project(':javaJokerLib')
     implementation project(':androidDisplayJokeLib')
 
     // android support libs

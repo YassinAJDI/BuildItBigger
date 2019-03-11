@@ -53,6 +53,7 @@ allprojects {
     }
 }
 
+//Ensure that all dependencies use the same version of the Android Support library
 subprojects {
     project.configurations.all {
         resolutionStrategy.eachDependency { details ->
