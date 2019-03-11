@@ -1,26 +1,21 @@
 Warning: Google App Engine Java 7 runtime is deprecated.
 Warning: See https://cloud.google.com/appengine/docs/deprecations/java7
-Mar 09, 2019 9:23:49 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+Mar 11, 2019 12:33:15 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\Yassin\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'D:\Android\Udacity Android nanodegree\Build It Bigger\code\BuildItBigger\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
-Mar 09, 2019 9:23:49 PM com.google.apphosting.utils.jetty.JettyLogger info
+Mar 11, 2019 12:33:15 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
-Mar 09, 2019 8:23:50 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
-WARNING: Your working directory, (D:\Android\Udacity Android nanodegree\Build It Bigger\code\BuildItBigger) is not equal to your 
+Mar 11, 2019 11:33:15 AM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (D:\Android\Udacity Android nanodegree\Build It Bigger\code\BuildItBigger\backend) is not equal to your 
 web application root (D:\Android\Udacity Android nanodegree\Build It Bigger\code\BuildItBigger\backend\build\exploded-backend)
 You will not be able to access files from your working directory on the production server.
 
-Mar 09, 2019 8:23:50 PM com.google.apphosting.utils.jetty.JettyLogger info
+Mar 11, 2019 11:33:15 AM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: jetty-6.1.x
-Mar 09, 2019 8:23:51 PM com.google.apphosting.utils.jetty.JettyLogger info
+Mar 11, 2019 11:33:16 AM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Started SelectChannelConnector@localhost:8080
-Mar 09, 2019 8:23:51 PM com.google.appengine.tools.development.AbstractModule startup
+Mar 11, 2019 11:33:16 AM com.google.appengine.tools.development.AbstractModule startup
 INFO: Module instance default is running at http://localhost:8080/
-Mar 09, 2019 8:23:51 PM com.google.appengine.tools.development.AbstractModule startup
+Mar 11, 2019 11:33:16 AM com.google.appengine.tools.development.AbstractModule startup
 INFO: The admin console is running at http://localhost:8080/_ah/admin
-Mar 09, 2019 9:23:51 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+Mar 11, 2019 12:33:16 PM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running
-Mar 09, 2019 9:24:12 PM com.google.appengine.tools.development.AbstractModule shutdown
-INFO: Shutting down module instance default
-Shutting down.
-Mar 09, 2019 9:24:12 PM com.google.appengine.api.datastore.dev.LocalDatastoreService cleanupActiveServices
-INFO: scheduler shutting down.
