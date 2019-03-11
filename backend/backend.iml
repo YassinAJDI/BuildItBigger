@@ -39,32 +39,32 @@
     <orderEntry type="library" exported="" name="Gradle: google-http-client-android-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: swagger-core-1.5.9" level="project" />
     <orderEntry type="library" exported="" name="Gradle: guava-19.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: swagger-models-1.5.9" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jackson-databind-2.6.4" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: swagger-models-1.5.9" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jackson-annotations-2.6.4" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jackson-datatype-joda-2.4.5" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jackson-dataformat-yaml-2.4.5" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jackson-core-2.6.4" level="project" />
     <orderEntry type="library" exported="" name="Gradle: appengine-api-1.0-sdk-1.9.56" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-appengine-1.21.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-jdo-1.21.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: google-http-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jsr305-3.0.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: slf4j-nop-1.7.21" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: guava-jdk5-17.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: slf4j-api-1.7.21" level="project" />
     <orderEntry type="library" exported="" name="Gradle: swagger-annotations-1.5.9" level="project" />
     <orderEntry type="library" exported="" name="Gradle: commons-lang3-3.2.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: validation-api-1.1.0.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: httpclient-4.0.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: jdo2-api-2.3-eb" level="project" />
     <orderEntry type="library" exported="" name="Gradle: joda-time-2.2" level="project" />
     <orderEntry type="library" exported="" name="Gradle: snakeyaml-1.12" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: transaction-api-1.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: guava-jdk5-17.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: httpclient-4.0.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: httpcore-4.0.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: commons-logging-1.1.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: commons-codec-1.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: transaction-api-1.1" level="project" />
   </component>
 </module>

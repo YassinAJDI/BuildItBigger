@@ -22,8 +22,8 @@ buildscript {
  * build options.
  */
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.3"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     /**
      * The defaultConfig block encapsulates default settings and entries for all
@@ -34,7 +34,7 @@ android {
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -78,13 +78,13 @@ android {
  */
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':javaJokerLib')
-    implementation project(':androidDisplayJokeLib')
     // V2: Endpoints Framework v2 migration
     endpointsServer project(path: ':backend', configuration: 'endpoints')
+    implementation project(':javaJokerLib')
+    implementation project(':androidDisplayJokeLib')
 
     // android support libs
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 
     // Ads
     freeImplementation 'com.google.android.gms:play-services-ads:17.1.3'
@@ -92,7 +92,7 @@ dependencies {
     // Google cloud
     implementation 'com.google.api-client:google-api-client:1.23.0'
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
-    implementation 'com.google.code.findbugs:jsr305:3.0.1'
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
 
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -102,6 +102,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 
     // Instrumented tests
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test:rules:1.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
 }
